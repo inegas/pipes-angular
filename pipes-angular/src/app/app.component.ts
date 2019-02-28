@@ -26,5 +26,6 @@ export class AppComponent {
     setTimeout(()=>resolve('Me llamabas?'),1500);
   })
 
+  date = new Date();
 
 }
