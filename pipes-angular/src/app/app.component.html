@@ -21,8 +21,42 @@
         <td>lowercase</td>
         <td>{{ nombre | lowercase }}</td>
       </tr>
+      <tr>
+        <td>{{ nombre }}</td>
+        <td>slice:3</td>
+        <td>{{ nombre | slice:3 }}</td>
+      </tr>
+      <tr>
+        <td>{{ nombre }}</td>
+        <td>slice:0:2</td>
+        <td>{{ nombre | slice:0:3 }}</td>
+      </tr>
+      <tr>
+        <td>{{ nums }}</td>
+        <td>slice:0:2</td>
+        <td>{{ nums | slice:0:5 }}</td>
+      </tr>
+      <tr>
+        <td>{{ PI }}</td>
+        <td>number:'3.0-0'</td>
+        <td>{{ PI | number:'3.0-0' }}</td>
+      </tr>
+      <tr>
+        <td>{{ PI }}</td>
+        <td>number:'1.0-2'</td>
+        <td>{{ PI | number:'1.0-2' }}</td>
+      </tr>
     </tbody>
   </table>
+
+  <table>
+    <h4>Slice</h4>
+    <hr>
+    <ul>
+      <li *ngFor="let item of nums | slice:5:9">{{ item }}</li>
+    </ul>
+  </table>
+
 </div>
 
 <router-outlet></router-outlet>
