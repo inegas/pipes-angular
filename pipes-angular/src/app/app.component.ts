@@ -11,5 +11,20 @@ export class AppComponent {
   nombre:string = 'Angel';
   nums:number[] = [1,2,3,4,5,6,7,8,9,10];
   PI = Math.PI;
+  pcentaje = 0.234;
+
+  objeto = {
+    nombre: "HULIO",
+    level: 99,
+    fuerza: "SE LAS SABE TODAS",
+    ulti:{
+      R: "NO HA TOCADO UNA RAQUETA EN SU VIDA"
+    }
+  };
+
+  Promesa = new Promise((resolve, reject)=>{
+    setTimeout(()=>resolve('Me llamabas?'),1500);
+  })
+
 
 }
