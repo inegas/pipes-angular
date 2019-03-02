@@ -71,6 +71,17 @@
         <td>Pipe Capitalizar-strings</td>
         <td>{{ nombrePipe | capitalizarNombre }}</td>
       </tr>
+      <tr>
+        <td>{{ pass }}</td>
+        <td>
+          <div *ngIf="!activar"><button (click)="activar = !activar"
+            type="button" class="btn btn-primary">Activar</button></div>
+          <div *ngIf="activar"><button (click)="activar = !activar"
+              type="button" class="btn btn-primary">Desactivar</button></div>
+        </td>
+        <td>{{pass | password:activar}}</td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
 

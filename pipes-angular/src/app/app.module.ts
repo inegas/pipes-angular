@@ -12,13 +12,16 @@ import { CapitalizarNombrePipe } from '../app/pipe/capitalizar-nombre.pipe';
 import { LOCALE_ID } from '@angular/core';
 import { registerLocaleData } from '@angular/common';
 import localeEs from '@angular/common/locales/es';
+import { PasswordPipe } from './pipe/password.pipe';
+
 
 registerLocaleData(localeEs, 'es');
 
 @NgModule({
   declarations: [
     AppComponent,
-    CapitalizarNombrePipe
+    CapitalizarNombrePipe,
+    PasswordPipe,
   ],
   imports: [
     BrowserModule,

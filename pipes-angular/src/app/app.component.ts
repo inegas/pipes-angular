@@ -10,6 +10,9 @@ export class AppComponent {
 
   nombre:string = 'Angel';
   nombrePipe:string = 'ángel banegas garcía';
+  pass:any = 'tidus123';
+
+  activar:boolean = true;
 
   nums:number[] = [1,2,3,4,5,6,7,8,9,10];
   PI = Math.PI;
