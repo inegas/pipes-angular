@@ -2,9 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 
-
+//components
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CapitalizarNombrePipe } from '../app/pipe/capitalizar-nombre.pipe';
 
 
 //Para poner una fecha en español
@@ -16,7 +17,8 @@ registerLocaleData(localeEs, 'es');
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CapitalizarNombrePipe
   ],
   imports: [
     BrowserModule,
